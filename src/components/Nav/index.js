@@ -6,10 +6,7 @@ const Nav = () => {
     <main>
         <ul>
             <li>
-                <Link to="/">Höme</Link>
-            </li>
-            <li>
-                <Link to="/resume">Resúme</Link>
+                <a href="javascript:location='mailto:\u006a\u0061\u0079\u0040\u006a\u0061\u0079\u0077\u0065\u0072\u0072\u0061\u002e\u0063\u006f\u006d';void 0">Contact</a>
             </li>
         </ul>
     </main>

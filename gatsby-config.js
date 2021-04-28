@@ -12,7 +12,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    // "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -46,6 +46,7 @@ module.exports = {
         refreshToken: `AQBDAYVHz06TJVvAzJaZf0gL_WMb3oxjoGVs6PF6-ihTu4iAK_u-UA13fb7PYDbiv_XHmB7f93mnnYTO8vlP68BOoK_k7cAqjScfOZthnmwB18AeM--AKJ-JScCXUgmif1M`,
         fetchPlaylists: true,
         fetchRecent: true,
+        timeRanges: ['long_term'],
       },
     },
   ],

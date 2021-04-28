@@ -2,15 +2,18 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const FooterElm = styled.footer`
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-    width: 100%;
-    /* background: #efefef; */
+    display: none;
+    
+    @media(min-width: 1200px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+        width: 100%;
+    }
 `;
 
 export const FooterIcon = styled(Link)`
