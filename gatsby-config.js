@@ -38,5 +38,15 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-source-spotify`,
+      options: {
+        clientId: `d1ac03ce86e747ec86264865dafd3520`,
+        clientSecret: `a18433a0f23b4a7a9b4a7f5bca4b6b2c`,
+        refreshToken: `AQBDAYVHz06TJVvAzJaZf0gL_WMb3oxjoGVs6PF6-ihTu4iAK_u-UA13fb7PYDbiv_XHmB7f93mnnYTO8vlP68BOoK_k7cAqjScfOZthnmwB18AeM--AKJ-JScCXUgmif1M`,
+        fetchPlaylists: true,
+        fetchRecent: true,
+      },
+    },
   ],
 };
