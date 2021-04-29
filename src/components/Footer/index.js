@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FooterElm, FooterIcon, FooterSpotify, WavyIcon } from "./FooterStyles"
 import gitHubIcon from "../../images/icons/github-brands.svg";
-import wavvyIcon from "../../images/icons/wavvy.svg";
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
