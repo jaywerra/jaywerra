@@ -13,7 +13,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-
+        background: ${ props => props.theme.background };
+        color: ${ props => props.theme.text };
     }
 
     ul {
@@ -30,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
     img {
         height: auto;
         width: 100%;
+    }
+
+    .toggleFill {
+        fill: ${ props => props.theme.text };
     }
 
 `;

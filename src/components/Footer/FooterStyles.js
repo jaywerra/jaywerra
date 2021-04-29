@@ -34,10 +34,4 @@ export const WavyIcon = styled.div`
 
 export const FooterSpotify = styled.div`
     display: flex;
-
-    .iconwrap {
-        /* position: relative;
-        height: 50px;
-        width: 50px; */
-    }
 `;
