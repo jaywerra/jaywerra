@@ -199,6 +199,22 @@ const ProjectList = () => {
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>
+                            Group Experience
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
                             Law + Brandmeyer
                         </ProjectTitle>
                         <ProjectWhere>
@@ -238,6 +254,246 @@ const ProjectList = () => {
                         </ProjectWhere>
                         <ProjectYear>
                             Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Merrill Edge
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Digitas
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Mansell & Mansell
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Brickley Law
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Brickley Law
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Los Angeles Probate
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Discovery Cove
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Verndale
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Doyle Law
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Foray
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Amalgam
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            B | B Law Group
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Kaleidoscope Adventures
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Bloom Injury Law
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Craig Charles Law
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Thompson Law
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Bicycle Lawyer
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
+                        </ProjectYear>
+                    </ProjectDesc>
+                    <ProjectArrow>   
+                        <IconRightArrow />
+                    </ProjectArrow> 
+                </ProjectItem>
+                <ProjectItem to="/"> 
+                    <ProjectDesc>
+                        <ProjectTitle>
+                            Law Office of Jeff Vallens
+                        </ProjectTitle>
+                        <ProjectWhere>
+                            Agency: Werra
+                        </ProjectWhere>
+                        <ProjectYear>
+                            Design / Development
                         </ProjectYear>
                     </ProjectDesc>
                     <ProjectArrow>   

@@ -26,13 +26,9 @@ export const HeaderElm = styled.header`
 
     h1 {
         margin: 0 0 16px;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 300;
         text-transform: uppercase;
-
-        @media(min-width: 1000px) {
-            font-size: 22px;
-        }
     }
 `;
 

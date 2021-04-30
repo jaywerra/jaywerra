@@ -23,7 +23,7 @@ export const ProjectListViewToggle = styled.div`
     border-bottom: 2px solid #000;
 
     @media(min-width: 900px) {
-        padding: 32px 40px;
+        padding: 24px 40px;
         width: calc(70% - 3px);
 
         // refactor with gsap or framer
@@ -45,7 +45,7 @@ export const ProjectListViewToggle = styled.div`
 
 export const Projects = styled.div`
     @media(min-width: 900px) {
-        padding-top: 102px;
+        padding-top: 88px;
     }
 `;
 
