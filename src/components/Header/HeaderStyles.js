@@ -1,13 +1,22 @@
 import styled from "styled-components"
 
 export const HeaderElm = styled.header`
-    display: flex;  
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
+    height: 100%;
+
+    @media(min-width: 900px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 30%;
+        border-right: 2px solid #000;
+    }
+
+    @media(min-width: 800px) {
+        width: 30%;
+    }
 
     @media(min-width: 1200px) {
-        padding: 20px 50px;
+        width: 20%;
     }
 
     button {
@@ -17,4 +26,54 @@ export const HeaderElm = styled.header`
         border: none;
         cursor: pointer;
     }
+
+    h1 {
+        margin: 0 0 16px;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+        @media(min-width: 1000px) {
+            font-size: 24px;
+        }
+    }
+`;
+
+export const HeaderIntro = styled.p`
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    a {
+        text-decoration: underline;
+    }
+`;
+
+export const HeaderSection = styled.div`
+    padding: 24px 20px;
+    border-bottom: 2px solid #000;
+`;
+
+export const HeaderSectionTitle = styled.h2`
+    margin-bottom: 20px;
+    font-weight: 600;
+`;
+
+export const LinkList = styled.ul`
+
+    li {
+        margin-bottom: 12px;
+        font-size: 16px;
+        font-weight: 400;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+`;
+
+export const SpotifyPlayer = styled.div`
+    line-height: 1.5;
 `;

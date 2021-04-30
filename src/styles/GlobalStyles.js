@@ -14,7 +14,17 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background: ${ props => props.theme.background };
+        border: 1px solid #000;
         color: ${ props => props.theme.text };
+
+        @media(min-width: 900px) {
+            border: 2px solid #000;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
     }
 
     ul {

@@ -20,7 +20,17 @@ export const HeroCopy = styled.div`
         font-weight: 500;
         line-height: 1.618;
 
-        @media(min-width: 1200px) {
+        @media(min-width: 700px) {
+            max-width: 90%;
+            font-size: 36px;
+        }
+
+        @media(min-width: 1000px) {
+            max-width: 80%;
+            font-size: 40px;
+        }
+
+        @media(min-width: 1400px) {
             max-width: 70%;
             font-size: 48px;
         }
