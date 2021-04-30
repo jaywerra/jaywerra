@@ -14,12 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background: ${ props => props.theme.background };
-        border: 1px solid #000;
         color: ${ props => props.theme.text };
-
-        @media(min-width: 900px) {
-            border: 2px solid #000;
-        }
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -45,6 +40,40 @@ const GlobalStyles = createGlobalStyle`
 
     .toggleFill {
         fill: ${ props => props.theme.text };
+    }
+
+    .borderBottom,
+    .borderTop {
+        position: fixed;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: #000;
+    }
+
+    .borderTop {
+        top: 0;
+    }
+
+    .borderBottom {
+        bottom: 0;
+    }
+
+    .borderLeft,
+    .borderRight {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background: #000;  
+    }
+
+    .borderLeft {
+        left: 0;
+    }
+
+    .borderRight {
+        right: 0;
     }
 
 `;

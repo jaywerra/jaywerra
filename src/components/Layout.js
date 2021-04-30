@@ -32,6 +32,10 @@ const Layout = ({children}) => {
         <ThemeProvider theme={ theme === "light" ? lightTheme : darkTheme }>
             <GlobalStyles />
             <Typography />
+            <div class="borderTop"></div>
+            <div class="borderBottom"></div>
+            <div class="borderLeft"></div>
+            <div class="borderRight"></div>
             <HeaderElm>
                 <HeaderSection>
                     <h1>

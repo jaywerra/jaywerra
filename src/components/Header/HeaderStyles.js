@@ -8,11 +8,8 @@ export const HeaderElm = styled.header`
         left: 0;
         top: 0;
         width: 30%;
+        border-left: 2px solid #000;
         border-right: 2px solid #000;
-    }
-
-    @media(min-width: 800px) {
-        width: 30%;
     }
 
     @media(min-width: 1200px) {
@@ -30,12 +27,11 @@ export const HeaderElm = styled.header`
     h1 {
         margin: 0 0 16px;
         font-size: 20px;
-        font-weight: 500;
-        letter-spacing: -1px;
+        font-weight: 300;
         text-transform: uppercase;
 
         @media(min-width: 1000px) {
-            font-size: 24px;
+            font-size: 22px;
         }
     }
 `;
