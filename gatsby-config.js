@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "JayWerra",
+    title: "Jay Werra",
+    description: "Portfolio of Los Angeles based designer + developer, Jay Werra."
   },
   plugins: [
     "gatsby-plugin-styled-components",

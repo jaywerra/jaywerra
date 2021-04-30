@@ -1,5 +1,6 @@
 import React from 'react'
 import IconRightArrow from '../../images/icons/IconRightArrow'
+import PageNav from '../PageNav'
 import {
     ProjectListView,
     ProjectListViewToggle,
@@ -15,10 +16,7 @@ import {
 const ProjectList = () => {
     return (
         <ProjectListView>
-            <ProjectListViewToggle>
-                <h2>Projects</h2>
-                <div>List / Grid</div>
-            </ProjectListViewToggle>
+            <PageNav title="Projects" />
            <Projects>
                 <ProjectItem to="/"> 
                     <ProjectDesc>

@@ -1,11 +1,15 @@
 import React, { useState } from "react"
+import Helmet from "react-helmet"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { HeaderElm, HeaderSection, HeaderIntro, LinkList, SpotifyPlayer } from "./Header/HeaderStyles"
+import { HeaderElm, HeaderSection, HeaderIntro, SpotifyPlayer } from "./Header/HeaderStyles"
+import Nav from "../components/Nav"
 import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-import Obfuscate from "react-obfuscate"
+// import Obfuscate from "react-obfuscate"
+
+import { motion } from "framer-motion"
 
 const Layout = ({children}) => {
 
@@ -32,6 +36,11 @@ const Layout = ({children}) => {
         <ThemeProvider theme={ theme === "light" ? lightTheme : darkTheme }>
             <GlobalStyles />
             <Typography />
+            <Helmet>
+                <html lang="en" />
+                <title>Title</title>
+                <meta name="description" content="site description"/>
+            </Helmet>
             <div class="borderTop"></div>
             <div class="borderBottom"></div>
             <div class="borderLeft"></div>
@@ -46,44 +55,7 @@ const Layout = ({children}) => {
                     </HeaderIntro>
                 </HeaderSection>
                 <HeaderSection>
-                    <LinkList>
-                        <li>
-                            <Link to="/">
-                                Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/resume/">
-                                Resúme
-                            </Link>
-                        </li>
-                        <li>
-                            <a href="https://werra.io" target="_blank" rel="noopener noreferrer">
-                                Werra
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/werradesign" target="_blank" rel="noopener noreferrer">
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/jaywerra/" target="_blank" rel="noopener noreferrer">
-                                Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jaywerra/" target="_blank" rel="noopener noreferrer">
-                                Linkedin
-                            </a>
-                        </li>
-
-                        <li>
-                            <Obfuscate email="jay@jaywerra.com" aria-label="Email Me">
-                                Email
-                            </Obfuscate>
-                        </li>
-                    </LinkList>
+                    <Nav />
                 </HeaderSection>
                 <HeaderSection className="desktoponly">
                     <HeaderIntro>
@@ -98,8 +70,6 @@ const Layout = ({children}) => {
                         </HeaderIntro>
                     </SpotifyPlayer>
                 </HeaderSection>
-
-                {/* <Nav /> */}
                 {/* <button onClick={toggleTheme}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.9 63.5" className="toggleFill">
                         <g>

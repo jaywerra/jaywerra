@@ -1,10 +1,10 @@
 import React from 'react'
 import { PageNavElm } from "./PageNavStyles"
 
-const PageNav = () => {
+const PageNav = (props) => {
     return (
         <PageNavElm>
-            <h2>Resúme</h2>
+            <h2>{props.title}</h2>
         </PageNavElm>
     )
 }
