@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
+import Obfuscate from "react-obfuscate"
 
 const Layout = ({children}) => {
 
@@ -61,6 +62,11 @@ const Layout = ({children}) => {
                             <a href="https://www.linkedin.com/in/jaywerra/" target="_blank" rel="noopener noreferrer">
                                 Linkedin
                             </a>
+                        </li>
+                        <li>
+                            <Obfuscate email="jay@jaywerra.com" aria-label="Email Me">
+                                Email
+                            </Obfuscate>
                         </li>
                     </LinkList>
                 </HeaderSection>
