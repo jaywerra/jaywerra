@@ -44,6 +44,14 @@ export const HeaderIntro = styled.p`
 export const HeaderSection = styled.div`
     padding: 24px 20px;
     border-bottom: 2px solid #000;
+
+    &.desktoponly {
+        display: none;
+
+        @media(min-width: 900px) {
+            display: block;
+        }
+    }
 `;
 
 export const HeaderSectionTitle = styled.h2`
@@ -52,11 +60,29 @@ export const HeaderSectionTitle = styled.h2`
 `;
 
 export const LinkList = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(min-width: 900px) {
+        display: block;
+    }
 
     li {
-        margin-bottom: 12px;
+        margin: 0 16px 24px 0;
+        width: calc(25% - 16px);
         font-size: 16px;
         font-weight: 400;
+
+        @media(max-width: 900px) {
+            &:nth-last-child(-n+3) {
+                margin-bottom: 4px;
+            }
+        }
+
+        @media(min-width: 900px) {
+            margin: 0 0 12px;
+            width: auto;
+        }
 
         a {
             text-decoration: underline;

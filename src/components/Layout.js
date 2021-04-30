@@ -48,6 +48,11 @@ const Layout = ({children}) => {
                 <HeaderSection>
                     <LinkList>
                         <li>
+                            <Link to="/">
+                                Projects
+                            </Link>
+                        </li>
+                        <li>
                             <Link to="/resume/">
                                 Resúme
                             </Link>
@@ -80,12 +85,12 @@ const Layout = ({children}) => {
                         </li>
                     </LinkList>
                 </HeaderSection>
-                <HeaderSection>
+                <HeaderSection className="desktoponly">
                     <HeaderIntro>
                         Accepting new projects this Summer.
                     </HeaderIntro>
                 </HeaderSection>
-                <HeaderSection>
+                <HeaderSection className="desktoponly">
                     <SpotifyPlayer>
                         <HeaderIntro>
                             Listening to <a href={data.spotifyRecentTrack.track.external_urls.spotify} target="_blank" rel="noopener noreferrer">
