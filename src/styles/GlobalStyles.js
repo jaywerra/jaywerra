@@ -49,6 +49,7 @@ const GlobalStyles = createGlobalStyle`
         height: 3px;
         width: 100%;
         background: #000;
+        z-index: 2;
     }
 
     .borderTop {
@@ -66,6 +67,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         width: 3px;
         background: #000;  
+        z-index: 2;
     }
 
     .borderLeft {
@@ -76,6 +78,14 @@ const GlobalStyles = createGlobalStyle`
         right: 0;
     }
 
+    button {
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        text-decoration: underline;
+    }
 `;
 
 export default GlobalStyles;

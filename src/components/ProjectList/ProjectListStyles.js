@@ -61,6 +61,10 @@ export const ProjectItem = styled(Link)`
     @media(min-width: 900px) {
         padding: 32px 40px;
     }
+
+    &:hover {
+        background: #f2f2f2;
+    }
 `;
 
 export const ProjectTitle = styled.h2`
@@ -72,11 +76,13 @@ export const ProjectTitle = styled.h2`
 export const ProjectWhere = styled.p`
     margin: 8px 0;
     font-size: 16px;
+    color: #333;
 `;
 
 export const ProjectYear = styled.p`
     margin: 0;
     font-size: 16px;
+    color: #333;
 `;
 
 export const ProjectDesc = styled.div`

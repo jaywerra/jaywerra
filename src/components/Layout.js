@@ -48,6 +48,11 @@ const Layout = ({children}) => {
                 <HeaderSection>
                     <LinkList>
                         <li>
+                            <Link to="/resume/">
+                                Resúme
+                            </Link>
+                        </li>
+                        <li>
                             <a href="https://werra.io" target="_blank" rel="noopener noreferrer">
                                 Werra
                             </a>
@@ -67,6 +72,7 @@ const Layout = ({children}) => {
                                 Linkedin
                             </a>
                         </li>
+
                         <li>
                             <Obfuscate email="jay@jaywerra.com" aria-label="Email Me">
                                 Email

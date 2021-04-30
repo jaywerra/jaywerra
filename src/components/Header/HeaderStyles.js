@@ -19,15 +19,13 @@ export const HeaderElm = styled.header`
     button {
         height: 40px;
         width: 40px;
-        background: none;
-        border: none;
         cursor: pointer;
     }
 
     h1 {
         margin: 0 0 16px;
         font-size: 24px;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
     }
 `;
