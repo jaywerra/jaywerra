@@ -3,7 +3,7 @@ import IconRightArrow from '../../images/icons/IconRightArrow'
 import PageNav from '../PageNav'
 import {
     ProjectListView,
-    ProjectListViewToggle,
+    // ProjectListViewToggle,
     Projects,
     ProjectArrow,
     ProjectDesc,
@@ -13,27 +13,36 @@ import {
     ProjectWhere
 } from "./ProjectListStyles"
 
+import useProjects from "../../hooks/use-projects"
+
 const ProjectList = () => {
+
+    const projects = useProjects();
+
     return (
         <ProjectListView>
             <PageNav title="Projects" />
            <Projects>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            Bank of America
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Digitas
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
+
+                {projects.map(project => (
+                    <ProjectItem to={project.slug} key={project.slug}> 
+                        <ProjectDesc>
+                            <ProjectTitle>
+                                {project.title}
+                            </ProjectTitle>
+                            <ProjectWhere>
+                                Agency: {project.agency}
+                            </ProjectWhere>
+                            <ProjectYear>
+                                {project.tasks}
+                            </ProjectYear>
+                        </ProjectDesc>
+                        <ProjectArrow>   
+                            <IconRightArrow />
+                        </ProjectArrow> 
+                    </ProjectItem>
+                ))}
+
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>

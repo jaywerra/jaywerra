@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { HeaderElm, HeaderSection, HeaderIntro, SpotifyPlayer } from "./Header/HeaderStyles"
 import Nav from "../components/Nav"
@@ -7,9 +7,8 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-// import Obfuscate from "react-obfuscate"
 
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
 const Layout = ({children}) => {
 
@@ -41,10 +40,10 @@ const Layout = ({children}) => {
                 <title>Title</title>
                 <meta name="description" content="site description"/>
             </Helmet>
-            <div class="borderTop"></div>
-            <div class="borderBottom"></div>
-            <div class="borderLeft"></div>
-            <div class="borderRight"></div>
+            <div className="borderTop"></div>
+            <div className="borderBottom"></div>
+            <div className="borderLeft"></div>
+            <div className="borderRight"></div>
             <HeaderElm>
                 <HeaderSection>
                     <h1>
@@ -83,7 +82,6 @@ const Layout = ({children}) => {
                 </button> */}
             </HeaderElm>
                 {children}
-            {/* <Footer /> */}
         </ThemeProvider>
     )
 }

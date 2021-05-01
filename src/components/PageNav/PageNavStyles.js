@@ -23,7 +23,11 @@ export const PageNavElm = styled.div`
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 300;
+
+        @media(min-width: 900px) {
+            font-size: 32px;
+        }
     }
 `;

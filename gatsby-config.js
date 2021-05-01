@@ -40,6 +40,13 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: "./src/projects"
+      }
+    },
+    {
       resolve: `gatsby-source-spotify`,
       options: {
         clientId: `d1ac03ce86e747ec86264865dafd3520`,
