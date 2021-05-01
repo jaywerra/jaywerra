@@ -20,7 +20,8 @@ export const ProjectListViewToggle = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 24px 20px;
-    border-bottom: 2px solid #000;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
 
     @media(min-width: 900px) {
         padding: 24px 40px;
@@ -55,7 +56,8 @@ export const ProjectItem = styled(Link)`
     justify-content: space-between;
     padding: 24px 20px;
     cursor: pointer;
-    border-bottom: 2px solid #000;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
     transition: linear 0.35s;
 
     @media(min-width: 900px) {
@@ -76,13 +78,11 @@ export const ProjectTitle = styled.h2`
 export const ProjectWhere = styled.p`
     margin: 8px 0;
     font-size: 16px;
-    color: #333;
 `;
 
 export const ProjectYear = styled.p`
     margin: 0;
     font-size: 16px;
-    color: #333;
 `;
 
 export const ProjectDesc = styled.div`

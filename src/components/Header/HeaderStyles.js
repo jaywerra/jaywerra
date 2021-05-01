@@ -8,8 +8,8 @@ export const HeaderElm = styled.header`
         left: 0;
         top: 0;
         width: 30%;
-        border-left: 2px solid #000;
-        border-right: 2px solid #000;
+        border-right-style: solid;
+        border-right-width: 2px;
     }
 
     @media(min-width: 1200px) {
@@ -43,7 +43,8 @@ export const HeaderIntro = styled.p`
 
 export const HeaderSection = styled.div`
     padding: 24px 20px;
-    border-bottom: 2px solid #000;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 
     &.desktoponly {
         display: none;
@@ -92,4 +93,11 @@ export const LinkList = styled.ul`
 
 export const SpotifyPlayer = styled.div`
     line-height: 1.5;
+`;
+
+export const ThemeToggleButton = styled.button`
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    z-index: 2;
 `;

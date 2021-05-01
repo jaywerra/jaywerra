@@ -22,8 +22,7 @@ const ProjectList = () => {
     return (
         <ProjectListView>
             <PageNav title="Projects" />
-           <Projects>
-
+            <Projects>
                 {projects.map(project => (
                     <ProjectItem to={project.slug} key={project.slug}> 
                         <ProjectDesc>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
+// import Layout from "../components/Layout"
 import PageNav from '../components/PageNav'
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"

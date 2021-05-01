@@ -5,7 +5,7 @@ import PageNav from "../../components/PageNav"
 const Resume = () => {
     return (
         <ResumeView>
-            <PageNav title="Resúme" />
+            <PageNav title="Resume" />
         </ResumeView>
     )
 }

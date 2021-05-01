@@ -13,7 +13,7 @@ const Nav = () => {
       </li>
       <li>
           <Link to="/resume/">
-              Resúme
+              Resume
           </Link>
       </li>
       <li>
