@@ -16,7 +16,7 @@ export const PageNavElm = styled.div`
         position: fixed;
         top: 3px;
         width: 100%;
-        background: #FFF;
+        background: #efefef;
     }
 
     @media(min-width: 1200px) {

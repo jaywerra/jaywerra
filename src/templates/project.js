@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 // import Layout from "../components/Layout"
 import PageNav from '../components/PageNav'
 import {ContentColumn} from "../styles/LayoutStyles"
@@ -20,7 +20,7 @@ export const query = graphql`
 `;
 
 const projectContainer = {
-    hidden: { opacity: 0, y: 24 },
+    hidden: { opacity: 0, y: 4 },
     show: { opacity: 1, y: 0 },
     transition: { duration: 4 }
 }

@@ -47,7 +47,7 @@ export const ProjectListViewToggle = styled.div`
 
 export const Projects = styled(motion.div)`
     @media(min-width: 900px) {
-        padding-top: 88px;
+        padding-top: 98px;
     }
 `;
 
@@ -65,8 +65,10 @@ export const ProjectItem = styled(motion(Link))`
         padding: 32px 40px;
     }
 
-    &:hover {
-        background: #f2f2f2;
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            background: #f2f2f2;
+        }
     }
 `;
 

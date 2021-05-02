@@ -1,5 +1,4 @@
 import React from 'react'
-import IconRightArrow from '../../images/icons/IconRightArrow'
 import PageNav from '../PageNav'
 import useProjects from "../../hooks/use-projects"
 import {

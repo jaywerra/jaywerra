@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
+import SmoothScroll from "smooth-scroll"
 
 // import { motion } from "framer-motion"
 
@@ -31,6 +32,10 @@ const Layout = ({children}) => {
             }
         }
     `)
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 300
+    });
+
     return (
         <ThemeProvider theme={ theme === "light" ? lightTheme : darkTheme }>
             <GlobalStyles />

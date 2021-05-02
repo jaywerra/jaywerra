@@ -15,11 +15,39 @@ export const ProjectDetails = styled(motion.div)`
         font-size: 24px;
         font-weight: 300;
     }
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-bottom: 24px;
+        padding-left: 4px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-weight: 300;
+    }
+
+    .intro {
+        p {
+            margin: 0 0 12px;
+            font-size: 20px;
+        }
+    }
+
 `;
 
 export const ProjectCopy = styled.div`
     margin: 8px 0;
+    
     @media(min-width: 900px) {
-        margin: 40px 0;  
+        margin: 24px 0;  
     }
 `;
