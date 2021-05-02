@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import {motion} from "framer-motion"
 
 export const ProjectListView = styled.div`
     position: absolute;
@@ -44,13 +45,13 @@ export const ProjectListViewToggle = styled.div`
     }
 `;
 
-export const Projects = styled.div`
+export const Projects = styled(motion.div)`
     @media(min-width: 900px) {
         padding-top: 88px;
     }
 `;
 
-export const ProjectItem = styled(Link)`
+export const ProjectItem = styled(motion(Link))`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +59,7 @@ export const ProjectItem = styled(Link)`
     cursor: pointer;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    transition: linear 0.35s;
+    transition: background linear 0.3s;
 
     @media(min-width: 900px) {
         padding: 32px 40px;

@@ -3,12 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 const useProjects = () => {
   const data = useStaticQuery(graphql`
     {
-      allMdx {
+      allMdx(sort: {fields: frontmatter___order}) {
         nodes {
           frontmatter {
             slug
             title
             agency
+            order
             tasks
           }
           excerpt
@@ -22,6 +23,7 @@ const useProjects = () => {
     slug: project.frontmatter.slug,
     agency: project.frontmatter.agency,
     tasks: project.frontmatter.tasks,
+    order: project.frontmatter.order,
     excerpt: project.excerpt
   }))
 }

@@ -10,6 +10,7 @@ export const PageNavElm = styled.div`
     @media(min-width: 900px) {
         padding: 24px 40px;
         width: calc(70% - 3px);
+        z-index: 5;
 
         // refactor with gsap or framer
         position: fixed;

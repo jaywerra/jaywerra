@@ -1,6 +1,8 @@
 import React from 'react'
 import IconRightArrow from '../../images/icons/IconRightArrow'
 import PageNav from '../PageNav'
+import useProjects from "../../hooks/use-projects"
+import { motion } from "framer-motion"
 import {
     ProjectListView,
     // ProjectListViewToggle,
@@ -13,18 +15,49 @@ import {
     ProjectWhere
 } from "./ProjectListStyles"
 
-import useProjects from "../../hooks/use-projects"
-
 const ProjectList = () => {
 
     const projects = useProjects();
 
+    const container = {
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.125
+          }
+        }
+      }
+      
+      const item = {
+        show: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              y: { stiffness: 1000, velocity: -100 }
+            }
+          },
+          hidden: {
+            y: -10,
+            opacity: 0,
+            transition: {
+              y: { stiffness: 1000 }
+            }
+          }
+      }
+
     return (
         <ProjectListView>
             <PageNav title="Projects" />
-            <Projects>
-                {projects.map(project => (
-                    <ProjectItem to={project.slug} key={project.slug}> 
+
+            <Projects
+                variants={container}
+                initial="hidden"
+                animate="show"
+            >
+                {projects.map((project, i) => (
+                    <ProjectItem to={project.slug} key={i} variants={item}> 
                         <ProjectDesc>
                             <ProjectTitle>
                                 {project.title}
@@ -42,38 +75,9 @@ const ProjectList = () => {
                     </ProjectItem>
                 ))}
 
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            studio ar&d
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Werra
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Development / Design
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            Anti-Recidivism Coalition (ARC)
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Werra
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Design / Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
+                {/*
+
+
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>
@@ -90,22 +94,7 @@ const ProjectList = () => {
                         <IconRightArrow />
                     </ProjectArrow> 
                 </ProjectItem>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            FedEx
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Tank Design
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
+
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>
@@ -122,38 +111,8 @@ const ProjectList = () => {
                         <IconRightArrow />
                     </ProjectArrow> 
                 </ProjectItem>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            Nantucket Poke
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Werra
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Design / Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            Goldstein Law Group
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Werra
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Design / Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
+
+
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>
@@ -218,22 +177,7 @@ const ProjectList = () => {
                         <IconRightArrow />
                     </ProjectArrow> 
                 </ProjectItem>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            Law + Brandmeyer
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Werra
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Design / Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
+
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>
@@ -250,22 +194,7 @@ const ProjectList = () => {
                         <IconRightArrow />
                     </ProjectArrow> 
                 </ProjectItem>
-                <ProjectItem to="/"> 
-                    <ProjectDesc>
-                        <ProjectTitle>
-                            Goldfinch Bio
-                        </ProjectTitle>
-                        <ProjectWhere>
-                            Agency: Tank Design
-                        </ProjectWhere>
-                        <ProjectYear>
-                            Development
-                        </ProjectYear>
-                    </ProjectDesc>
-                    <ProjectArrow>   
-                        <IconRightArrow />
-                    </ProjectArrow> 
-                </ProjectItem>
+
                 <ProjectItem to="/"> 
                     <ProjectDesc>
                         <ProjectTitle>
@@ -505,7 +434,7 @@ const ProjectList = () => {
                     <ProjectArrow>   
                         <IconRightArrow />
                     </ProjectArrow> 
-                </ProjectItem>
+                </ProjectItem> */}
            </Projects>
         </ProjectListView>
     )
