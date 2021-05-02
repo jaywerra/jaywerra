@@ -22,8 +22,8 @@ const ProjectList = () => {
         show: {
           opacity: 1,
           transition: {
-            staggerChildren: 0.2,
-            delayChildren: 0.125
+            staggerChildren: 0.1,
+            delayChildren: 0.1
           }
         }
       }
@@ -47,7 +47,7 @@ const ProjectList = () => {
 
     return (
         <ProjectListView>
-            <PageNav title="Projects" />
+            {/* <PageNav title="Projects" /> */}
 
             <Projects
                 variants={container}

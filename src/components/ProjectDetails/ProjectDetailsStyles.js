@@ -6,13 +6,19 @@ export const ProjectDetails = styled(motion.div)`
     height: 2000px;
 
     @media(min-width: 900px) {
-        margin-top: 64px;
-        padding: 64px 40px;
+        /* margin-top: 64px; */
+        padding: 32px 40px;
     }
 
     p {
         margin: 0 0 20px;
         font-size: 24px;
+        font-weight: 300;
+    }
+
+    h2 {
+        margin-bottom: 24px;
+        font-size: 36px;
         font-weight: 300;
     }
 
@@ -48,6 +54,6 @@ export const ProjectCopy = styled.div`
     margin: 8px 0;
     
     @media(min-width: 900px) {
-        margin: 24px 0;  
+        margin: 0 0 24px;  
     }
 `;

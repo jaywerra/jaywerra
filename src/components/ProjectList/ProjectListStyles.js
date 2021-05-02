@@ -41,13 +41,13 @@ export const ProjectListViewToggle = styled.div`
 
     h2 {
         font-size: 32px;
-        font-weight: 300;
+        font-weight: 400;
     }
 `;
 
 export const Projects = styled(motion.div)`
     @media(min-width: 900px) {
-        padding-top: 98px;
+        /* padding-top: 98px; */
     }
 `;
 
@@ -73,7 +73,7 @@ export const ProjectItem = styled(motion(Link))`
 `;
 
 export const ProjectTitle = styled.h2`
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 300;
     letter-spacing: 1px;
 `;

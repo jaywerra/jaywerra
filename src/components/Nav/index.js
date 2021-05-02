@@ -8,7 +8,7 @@ const Nav = () => {
     <LinkList>
       <li>
           <Link to="/">
-              Projects
+              All Projects
           </Link>
       </li>
       <li>
