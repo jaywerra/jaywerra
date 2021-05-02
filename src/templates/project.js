@@ -1,10 +1,11 @@
 import React from 'react'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 // import Layout from "../components/Layout"
 import PageNav from '../components/PageNav'
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { ProjectDetails } from '../components/ProjectDetails/ProjectDetailsStyles'
+import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
+
 
 export const query = graphql`
   query($slug: String!) {
@@ -18,13 +19,26 @@ export const query = graphql`
     }
 `;
 
+const projectContainer = {
+    hidden: { opacity: 0, y: 24 },
+    show: { opacity: 1, y: 0 },
+    transition: { duration: 4 }
+}
+
 const ProjectTemplate = ({ data: { mdx: project } }) => (
     <ContentColumn>
-        <PageNav title={project.frontmatter.title} />
-        <ProjectDetails>
-            <MDXRenderer>
-                {project.body}
-            </MDXRenderer>
+        <PageNav title={`Projects / ${project.frontmatter.title}`} />
+        <ProjectDetails
+                variants={projectContainer}
+                initial="hidden"
+                animate="show"
+        >
+            {/* <Link to="/">&larr; Back to projects</Link> */}
+            <ProjectCopy>
+                <MDXRenderer>
+                    {project.body}
+                </MDXRenderer>
+            </ProjectCopy>
         </ProjectDetails>            
     </ContentColumn>
 );

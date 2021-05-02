@@ -24,9 +24,9 @@ export const HeaderElm = styled.header`
 
     h1 {
         margin: 0 0 16px;
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 300;
+        /* text-transform: uppercase; */
     }
 `;
 

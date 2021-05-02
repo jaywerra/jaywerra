@@ -2,7 +2,6 @@ import React from 'react'
 import IconRightArrow from '../../images/icons/IconRightArrow'
 import PageNav from '../PageNav'
 import useProjects from "../../hooks/use-projects"
-import { motion } from "framer-motion"
 import {
     ProjectListView,
     // ProjectListViewToggle,
@@ -70,7 +69,7 @@ const ProjectList = () => {
                             </ProjectYear>
                         </ProjectDesc>
                         <ProjectArrow>   
-                            <IconRightArrow />
+                            &rarr;
                         </ProjectArrow> 
                     </ProjectItem>
                 ))}
