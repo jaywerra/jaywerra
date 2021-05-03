@@ -1,5 +1,4 @@
 import React from 'react'
-import PageNav from '../PageNav'
 import useProjects from "../../hooks/use-projects"
 import {
     ProjectListView,

@@ -6,6 +6,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -25,13 +27,16 @@ module.exports = {
       options: {
         gatsbyRemarkPlugins: [
           {
-            resolve: "gatsby-remark-images"
+            resolve: "gatsby-remark-images",
+            options: {
+              linkImagesToOriginal: false,
+              quality: 100,
+              withWebp: true
+            }
           }
         ]
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -53,13 +58,6 @@ module.exports = {
       options: {
         name: "projects",
         path: "./src/projects"
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "projectsImages",
-        path: `./src/projects/arc/images`,
       }
     },
     {

@@ -1,9 +1,8 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { ProjectDetails, ProjectCopy, ImageContainer } from '../components/ProjectDetails/ProjectDetailsStyles'
+import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
 
 export const query = graphql`
     query($slug: String!) {
