@@ -1,17 +1,23 @@
 import React from 'react'
 import { graphql } from "gatsby"
-// import Layout from "../components/Layout"
-import PageNav from '../components/PageNav'
+import Img from "gatsby-image"
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
+import { ProjectDetails, ProjectCopy, ImageContainer } from '../components/ProjectDetails/ProjectDetailsStyles'
 
 export const query = graphql`
-  query($slug: String!) {
+    query($slug: String!) {
         mdx(frontmatter: { slug: { eq: $slug } }) {
             frontmatter {
                 title
                 agency
+                images {
+                    sharp: childImageSharp {
+                        fluid(quality: 100, maxWidth: 1000) {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
             }
             body
         }
@@ -30,17 +36,24 @@ const projectContainer = {
 
 const ProjectTemplate = ({ data: { mdx: project } }) => (
     <ContentColumn>
-        {/* <PageNav title={`Projects / ${project.frontmatter.title}`} /> */}
+        {/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
         <ProjectDetails
                 variants={projectContainer}
                 initial="hidden"
                 animate="show"
         >
-            {/* <Link to="/">&larr; Back to projects</Link> */}
             <ProjectCopy>
                 <MDXRenderer>
                     {project.body}
                 </MDXRenderer>
+
+                {/* {project.frontmatter.images.map(image => (
+                    <ImageContainer>
+                        <Img
+                            fluid={image.sharp.fluid}
+                        />
+                    </ImageContainer>
+                ))} */}
             </ProjectCopy>
         </ProjectDetails>            
     </ContentColumn>

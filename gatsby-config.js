@@ -20,7 +20,16 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images"
+          }
+        ]
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -44,6 +53,13 @@ module.exports = {
       options: {
         name: "projects",
         path: "./src/projects"
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projectsImages",
+        path: `./src/projects/arc/images`,
       }
     },
     {

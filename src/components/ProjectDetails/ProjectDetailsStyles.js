@@ -48,6 +48,24 @@ export const ProjectDetails = styled(motion.div)`
         }
     }
 
+    .images {
+        margin: 40px 0;
+        &__cols {
+
+            @media(min-width: 900px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &__elm {
+            @media(min-width: 900px) {
+                margin-right: 24px;
+                width: calc(50% - 24px);
+            }
+        }
+    }
+
 `;
 
 export const ProjectCopy = styled.div`
@@ -56,4 +74,9 @@ export const ProjectCopy = styled.div`
     @media(min-width: 900px) {
         margin: 0 0 24px;  
     }
+`;
+
+export const ImageContainer = styled.div`
+    margin: 24px 0;
+    max-width: 1400px;
 `;
