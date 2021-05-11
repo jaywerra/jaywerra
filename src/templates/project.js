@@ -33,29 +33,32 @@ const projectContainer = {
     },
 }
 
-const ProjectTemplate = ({ data: { mdx: project } }) => (
-    <ContentColumn>
-        {/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
-        <ProjectDetails
-                variants={projectContainer}
-                initial="hidden"
-                animate="show"
-        >
-            <ProjectCopy>
-                <MDXRenderer>
-                    {project.body}
-                </MDXRenderer>
+const ProjectTemplate = ({ data: { mdx: project }}) => {
+    
+    return (
+        <ContentColumn>
+            {/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
+            <ProjectDetails
+                    variants={projectContainer}
+                    initial="hidden"
+                    animate="show"
+            >
+                <ProjectCopy>
+                    <MDXRenderer>
+                        {project.body}
+                    </MDXRenderer>
 
-                {/* {project.frontmatter.images.map(image => (
-                    <ImageContainer>
-                        <Img
-                            fluid={image.sharp.fluid}
-                        />
-                    </ImageContainer>
-                ))} */}
-            </ProjectCopy>
-        </ProjectDetails>            
-    </ContentColumn>
-);
+                    {/* {project.frontmatter.images.map(image => (
+                        <ImageContainer>
+                            <Img
+                                fluid={image.sharp.fluid}
+                            />
+                        </ImageContainer>
+                    ))} */}
+                </ProjectCopy>
+            </ProjectDetails>            
+        </ContentColumn>
+    );
+}
 
 export default ProjectTemplate

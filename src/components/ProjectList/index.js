@@ -54,7 +54,7 @@ const ProjectList = () => {
                 animate="show"
             >
                 {projects.map((project, i) => (
-                    <ProjectItem to={project.slug} key={i} variants={item}> 
+                    <ProjectItem to={`${project.slug}/`} key={i} variants={item}> 
                         <ProjectDesc>
                             <ProjectTitle>
                                 {project.title}

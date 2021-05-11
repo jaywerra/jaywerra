@@ -3,10 +3,8 @@ import { motion } from "framer-motion"
 
 export const ProjectDetails = styled(motion.div)`
     padding: 24px 20px;
-    height: 2000px;
 
     @media(min-width: 900px) {
-        /* margin-top: 64px; */
         padding: 32px 40px;
     }
 
@@ -43,8 +41,12 @@ export const ProjectDetails = styled(motion.div)`
 
     .intro {
         p {
-            margin: 0 0 12px;
-            font-size: 20px;
+            margin: 0 0 6px;
+            font-size: 16px;
+            line-height: 1.5;
+            @media(min-width: 900px) {
+                font-size: 20px;
+            }
         }
     }
 
