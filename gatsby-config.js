@@ -71,5 +71,14 @@ module.exports = {
         timeRanges: ['long_term'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        production: true,
+        disable: !process.env.ANALYZE_BUNDLE_SIZE,
+        generateStatsFile: true,
+        analyzerMode: 'static',
+      }
+    }
   ],
 };

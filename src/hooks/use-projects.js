@@ -11,6 +11,7 @@ const useProjects = () => {
             agency
             order
             tasks
+            metaDescription
           }
           excerpt
         }
@@ -24,7 +25,8 @@ const useProjects = () => {
     agency: project.frontmatter.agency,
     tasks: project.frontmatter.tasks,
     order: project.frontmatter.order,
-    excerpt: project.excerpt
+    excerpt: project.excerpt,
+    metaDescription: project.frontmatter.metaDescription,
   }))
 }
 

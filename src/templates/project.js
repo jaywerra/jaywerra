@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
+import { Helmet } from 'react-helmet'
 
 export const query = graphql`
     query($slug: String!) {
@@ -10,6 +11,7 @@ export const query = graphql`
             frontmatter {
                 title
                 agency
+                metaDescription
                 images {
                     sharp: childImageSharp {
                         fluid(quality: 100, maxWidth: 1000) {
@@ -37,6 +39,12 @@ const ProjectTemplate = ({ data: { mdx: project }}) => {
     
     return (
         <ContentColumn>
+            <Helmet>
+                <title>
+                    {project.frontmatter.title}
+                </title>
+                <meta name="description" content={project.frontmatter.metaDescription} />
+            </Helmet>
             {/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
             <ProjectDetails
                     variants={projectContainer}

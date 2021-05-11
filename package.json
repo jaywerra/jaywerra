@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "analyze": "ANALYZE_BUNDLE_SIZE=true gatsby build"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -39,5 +40,8 @@
     "react-obfuscate": "^3.6.8",
     "styled-components": "^5.2.3",
     "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22"
   }
 }
