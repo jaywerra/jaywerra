@@ -3,7 +3,8 @@ import { graphql } from "gatsby"
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
-import { Helmet } from 'react-helmet'
+import SEO from '../components/SEO'
+
 
 export const query = graphql`
     query($slug: String!) {
@@ -39,13 +40,7 @@ const ProjectTemplate = ({ data: { mdx: project }}) => {
     
     return (
         <ContentColumn>
-            <Helmet>
-                <title>
-                    {project.frontmatter.title}
-                </title>
-                <meta name="description" content={project.frontmatter.metaDescription} />
-            </Helmet>
-            {/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
+            <SEO title={project.frontmatter.title} description={project.frontmatter.metaDescription} />
             <ProjectDetails
                     variants={projectContainer}
                     initial="hidden"

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Jay Werra",
-    description: "Portfolio of Los Angeles based designer + developer, Jay Werra."
+    description: "Los Angeles based front developer and designer. Founder of Werra Design.",
+    titleTemplate: " // Jay Werra"
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -19,7 +20,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/fav-icon.svg",
       },
     },
     {

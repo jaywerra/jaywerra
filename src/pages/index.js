@@ -1,14 +1,23 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+import {graphql, useStaticQuery} from 'gatsby'
+import SEO from '../components/SEO'
 import ProjectList from "../components/ProjectList"
 
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+          description
+          titleTemplate
+        }
+      }
+    }
+  `)
   return (
     <main>
-      <Helmet>
-        <title>Jay Werra | Developer & Designer</title>
-        <meta name="description" content="Los Angeles based front developer and designer. Founder of Werra Design." />
-      </Helmet>
+      <SEO title="Developer + Designer" description={data.site.siteMetadata.description} />
       <ProjectList />
     </main>
   )
