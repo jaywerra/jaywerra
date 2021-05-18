@@ -87,6 +87,12 @@ export const LinkList = styled.ul`
         a {
             text-decoration: underline;
         }
+
+        img {
+            height: 10px;
+            margin-left: 6px;
+            width: 16px;
+        }
     }
 `;
 

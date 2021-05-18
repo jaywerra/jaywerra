@@ -6,7 +6,7 @@ Todo
 - ~~Cleanup resume layout~~
 - ~~Setup all project folders~~
 - Hover preview thumbnail effect on projects
-- Mouseover effect on skill tags
+- ~~Mouseover effect on skill tags~~
 - Upload more project images
 - CV PDF file download
 - Grid or list toggle function

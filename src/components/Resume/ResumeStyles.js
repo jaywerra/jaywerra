@@ -98,8 +98,23 @@ export const SkillsBlock = styled.ul`
     li {
         display: inline-block;
         margin: 8px 16px 8px 0;
-        padding: 8px 16px;
+        padding: 8px 12px;
         background: #ddd;
         border-radius: 6px;
+        font-size: 14px;
+        /* transition: ease-in-out 0.15s; */
+
+        @media(min-width: 900px) {
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+
+        &:hover {
+            /* transform: scale(1.3); */
+        }
     }
+`;
+
+export const SkillsTag = styled(motion.li)`
+
 `;

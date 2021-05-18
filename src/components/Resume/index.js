@@ -11,7 +11,8 @@ import {
     School,
     SchoolName,
     SchoolProgram,
-    SkillsBlock
+    SkillsBlock,
+    SkillsTag
 } from "./ResumeStyles"
 
 const resumeContainer = {
@@ -28,8 +29,37 @@ const resumeContainer = {
     },
 }
 
-
 const Resume = () => {
+    
+    const skills = [
+        "Javascript",
+        "GatsbyJS",
+        "React",
+        "Jekyll",
+        "CSS",
+        "Styled Components",
+        "WordPress",
+        "Shopify",
+        "Headless CMS",
+        "Headless Shopify",
+        "Markdown",
+        "Google Analytics/Tag Manager",
+        "Basic PHP",
+        "Basic Python",
+        "SEO",
+        "Client Relationships",
+        "Entrepreneurship",
+        "Project Management",
+        "Experience Design",
+        "Rapid Prototyping",
+        "Wireframing",
+        "Sketch",
+        "Framer",
+        "Adobe Creative Suite",
+        "Figma",
+        "Jira"
+    ];
+
     return (
         <ResumeView
             variants={resumeContainer}
@@ -177,81 +207,14 @@ const Resume = () => {
                 </ResumeRowHeader>
                 <ResumeRow>
                     <SkillsBlock>
-                        <li>
-                            JavaScript
-                        </li>
-                        <li>
-                            GatsbyJS
-                        </li>
-                        <li>
-                            React
-                        </li>
-                        <li>
-                            Jekyll
-                        </li>
-                        <li>
-                            CSS
-                        </li>
-                        <li>
-                            Styled Components
-                        </li>
-                        <li>
-                            WordPress
-                        </li>
-                        <li>
-                            Shopify
-                        </li>
-                        <li>
-                            Headless CMS / Shopify
-                        </li>
-                        <li>
-                            Markdown
-                        </li>
-                        <li>
-                            Google Analytics/Tag Manager
-                        </li>
-                        <li>
-                            Basic PHP
-                        </li>
-                        <li>
-                            Basic Python
-                        </li>
-                        <li>
-                            SEO
-                        </li>
-                        <li>
-                            Client Relationships
-                        </li>
-                        <li>
-                            Entrepreneurship
-                        </li>
-                        <li>
-                            Project Management
-                        </li>
-                        <li>
-                            Experience Design
-                        </li>
-                        <li>
-                            Rapid Prototyping
-                        </li>
-                        <li>
-                            Wireframing
-                        </li>
-                        <li>
-                            Sketch
-                        </li>
-                        <li>
-                            Framer
-                        </li>
-                        <li>
-                            Adobe Creative Suite
-                        </li>
-                        <li>
-                            Figma
-                        </li>
-                        <li>
-                            Jira
-                        </li>
+                        {skills.map(function(skill){
+                            return <SkillsTag
+                                    whileHover={{ scale: 1.3 }}
+                                    key={skill}
+                                >
+                                    {skill}
+                                </SkillsTag>
+                        })}
                     </SkillsBlock>
                 </ResumeRow>
             </ResumeBody>
