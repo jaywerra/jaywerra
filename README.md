@@ -11,3 +11,6 @@ Todo
 - CV PDF file download
 - Grid or list toggle function
 - Image hosting on cloudinary or aws
+- Project pagination 
+- External link icons
+- Custom cursor
