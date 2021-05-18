@@ -1,6 +1,7 @@
-import * as React from "react"
+import React from "react"
 import Resume from "../components/Resume"
 import SEO from "../components/SEO"
+
 
 const ResumePage = () => {
   return (

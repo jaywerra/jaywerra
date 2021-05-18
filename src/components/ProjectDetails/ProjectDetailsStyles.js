@@ -15,9 +15,14 @@ export const ProjectDetails = styled(motion.div)`
     }
 
     h2 {
-        margin-bottom: 24px;
-        font-size: 36px;
+        margin-bottom: 16px;
+        font-size: 30px;
         font-weight: 300;
+
+        @media(min-width: 900px) {
+            margin-bottom: 24px;
+            font-size: 36px;
+        }
     }
 
     h3 {

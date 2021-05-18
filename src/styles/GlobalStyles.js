@@ -38,6 +38,10 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
     }
 
+    .tl-edges {
+        overflow-x: visible;
+    }
+
     .toggleFill {
         fill: ${ props => props.theme.text };
     }

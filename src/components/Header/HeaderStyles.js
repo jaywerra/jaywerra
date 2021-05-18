@@ -26,7 +26,6 @@ export const HeaderElm = styled.header`
         margin: 0 0 16px;
         font-size: 28px;
         font-weight: 300;
-        /* text-transform: uppercase; */
     }
 `;
 
@@ -81,7 +80,7 @@ export const LinkList = styled.ul`
         }
 
         @media(min-width: 900px) {
-            margin: 0 0 12px;
+            margin: 0 0 14px;
             width: auto;
         }
 

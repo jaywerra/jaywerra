@@ -93,7 +93,6 @@ export const ProjectDesc = styled.div`
 `;
 
 export const ProjectArrow = styled.div`
-    /* width: 30px; */
     font-size: 30px;
     font-weight: 300;
 `;

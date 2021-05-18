@@ -15,16 +15,35 @@ import {
     SkillsBlock
 } from "./ResumeStyles"
 
+const resumeContainer = {
+    hidden: {
+        opacity: 0,
+        y: 20
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5
+        }
+    },
+}
+
+
 const Resume = () => {
     return (
-        <ResumeView>
+        <ResumeView
+            variants={resumeContainer}
+            initial="hidden"
+            animate="show"
+        >
             <ResumeBody>
                 <ResumeRowHeader>
                     Experience
                 </ResumeRowHeader>
                 <ResumeRow>
                     <Job>
-                        <JobName to="https://werra.io" rel="noreferrer noopener" target="_blank">
+                        <JobName href="https://werra.io" rel="noreferrer noopener" target="_blank">
                             Werra Design
                         </JobName>
                         <JobTitle>
@@ -35,7 +54,7 @@ const Resume = () => {
                         </JobDescription>
                     </Job>
                     <Job>
-                        <JobName to="https://www.digitas.com" rel="noreferrer noopener nofollow" target="_blank">
+                        <JobName href="https://www.digitas.com" rel="noreferrer noopener nofollow" target="_blank">
                             Digitas
                         </JobName>
                         <JobTitle>
@@ -59,13 +78,13 @@ const Resume = () => {
                                     Strong focus on building accessible websites following W3C Standards
                                 </li>
                                 <li>
-                                    Code reviews for junior developers
+                                    Code reviews and mentoring for junior developers
                                 </li>
                             </ul>
                         </JobDescription>
                     </Job>
                     <Job>
-                        <JobName to="https://www.verndale.com" rel="noreferrer noopener nofollow" target="_blank">
+                        <JobName href="https://www.verndale.com" rel="noreferrer noopener nofollow" target="_blank">
                             Verndale
                         </JobName>
                         <JobTitle>
@@ -95,7 +114,7 @@ const Resume = () => {
                         </JobDescription>
                     </Job>
                     <Job>
-                        <JobName to="https://www.tankdesign.com" rel="noreferrer noopener nofollow" target="_blank">
+                        <JobName href="https://www.tankdesign.com" rel="noreferrer noopener nofollow" target="_blank">
                             Tank Design
                         </JobName>
                         <JobTitle>
@@ -203,6 +222,9 @@ const Resume = () => {
                         </li>
                         <li>
                             Client Relationships
+                        </li>
+                        <li>
+                            Entrepreneurship
                         </li>
                         <li>
                             Project Management

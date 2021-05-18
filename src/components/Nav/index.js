@@ -1,7 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 import Obfuscate from "react-obfuscate"
 import { LinkList } from "../Header/HeaderStyles"
+
+const pageTransition = {
+
+}
 
 const Nav = () => {
   return (
@@ -10,11 +14,12 @@ const Nav = () => {
           <Link to="/">
               Projects
           </Link>
+
       </li>
       <li>
-          <Link to="/resume/">
-              Resume
-          </Link>
+        <Link to="/resume/">
+            Resume
+        </Link>
       </li>
       <li>
           <Obfuscate email="jay@jaywerra.com" aria-label="Email Me">

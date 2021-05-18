@@ -1,7 +1,8 @@
 import styled from "styled-components"
 import { Link } from 'gatsby'
+import {motion} from "framer-motion"
 
-export const ResumeView = styled.div`
+export const ResumeView = styled(motion.div)`
     position: absolute;
     right: 0;
     padding-bottom: 32px;
@@ -17,7 +18,7 @@ export const ResumeView = styled.div`
 `;
 
 export const ResumeHeader = styled.div`
-    padding: 40px 40px 0;
+    padding: 40px 0;
 
     h2 {
         font-size: 36px;
@@ -33,11 +34,15 @@ export const ResumeHeader = styled.div`
 `;
 
 export const ResumeBody = styled.div`
+    padding: 0 20px;
 
+    @media(min-width: 900px) {
+        padding: 0 40px;
+    }
 `;
 
 export const ResumeRow = styled.div`
-    margin: 0 40px 20px;
+    margin: 0 0 20px;
     max-width: 900px;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
@@ -53,7 +58,6 @@ export const ResumeRow = styled.div`
 
 export const ResumeRowHeader = styled.h2`
     margin: 32px 0 16px;
-    padding: 0 40px;
     font-size: 30px;
     font-weight: 300;
 `;
@@ -67,10 +71,10 @@ export const JobTitle = styled.h2`
     font-weight: 300;
 `;
 
-export const JobName = styled(Link)`
+export const JobName = styled.a`
     display: inline-block;
     margin-bottom: 8px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.031em;
 `;
@@ -91,7 +95,7 @@ export const JobDescription = styled.div`
     }
 `;
 
-export const School = styled.h2`
+export const School = styled.div`
     margin-bottom: 40px;
 `;
 

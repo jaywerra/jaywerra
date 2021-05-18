@@ -8,6 +8,8 @@ import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
 
+
+
 // import { motion } from "framer-motion"
 
 const Layout = ({children}) => {
@@ -69,12 +71,12 @@ const Layout = ({children}) => {
                     <SpotifyPlayer>
                         <HeaderIntro>
                             Listening to <a href={data.spotifyRecentTrack.track.external_urls.spotify} target="_blank" rel="noopener noreferrer">
-                             {data.spotifyRecentTrack.track.name}</a> by <a href={data.spotifyRecentTrack.track.external_urls.spotify} target="_blank" rel="noopener noreferrer">{data.spotifyRecentTrack.track.artistString}</a>
+                            {data.spotifyRecentTrack.track.name}</a> by <a href={data.spotifyRecentTrack.track.external_urls.spotify} target="_blank" rel="noopener noreferrer">{data.spotifyRecentTrack.track.artistString}</a>
                         </HeaderIntro>
                     </SpotifyPlayer>
                 </HeaderSection>
             </HeaderElm>
-                {children}
+            {children}
         </ThemeProvider>
     )
 }
