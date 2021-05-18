@@ -5,7 +5,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
 import SEO from '../components/SEO'
 
-
 export const query = graphql`
     query($slug: String!) {
         mdx(frontmatter: { slug: { eq: $slug } }) {
