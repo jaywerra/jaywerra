@@ -1,6 +1,6 @@
 import * as React from "react"
 import {graphql, useStaticQuery} from 'gatsby'
-import Seo from '../components/Seo'
+import SEO from '../components/SEO'
 import ProjectList from "../components/ProjectList"
 
 const IndexPage = () => {
@@ -17,7 +17,7 @@ const IndexPage = () => {
   `)
   return (
     <main>
-      <Seo title="Developer + Designer" description={data.site.siteMetadata.description} />
+      <SEO title="Developer + Designer" description={data.site.siteMetadata.description} />
       <ProjectList />
     </main>
   )

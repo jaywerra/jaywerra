@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
-import Seo from '../components/Seo'
+import SEO from '../components/SEO'
 
 export const query = graphql`
     query($slug: String!) {
@@ -39,7 +39,7 @@ const ProjectTemplate = ({ data: { mdx: project }}) => {
     
     return (
         <ContentColumn>
-            <Seo title={project.frontmatter.title} description={project.frontmatter.metaDescription} />
+            <SEO title={project.frontmatter.title} description={project.frontmatter.metaDescription} />
             <ProjectDetails
                     variants={projectContainer}
                     initial="hidden"
