@@ -3,21 +3,24 @@ import { Link } from 'gatsby'
 import Obfuscate from "react-obfuscate"
 import { LinkList } from "../Header/HeaderStyles"
 
-const pageTransition = {
-
-}
 
 const Nav = () => {
   return (
     <LinkList>
       <li>
-          <Link to="/">
+          <Link
+            to="/"
+            activeStyle={{ color: "#0032BD" }}
+          >
               Projects
           </Link>
 
       </li>
       <li>
-        <Link to="/resume/">
+        <Link
+            to="/resume/"
+            activeStyle={{ color: "#0032BD" }}
+        >
             Resume
         </Link>
       </li>

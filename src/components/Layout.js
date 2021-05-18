@@ -8,10 +8,6 @@ import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
 
-
-
-// import { motion } from "framer-motion"
-
 const Layout = ({children}) => {
 
     const [theme, setTheme] = useState("light");

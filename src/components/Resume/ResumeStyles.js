@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from 'gatsby'
 import {motion} from "framer-motion"
 
 export const ResumeView = styled(motion.div)`
@@ -14,22 +13,6 @@ export const ResumeView = styled(motion.div)`
 
     @media(min-width: 1200px) {
         width: 80%;
-    }
-`;
-
-export const ResumeHeader = styled.div`
-    padding: 40px 0;
-
-    h2 {
-        font-size: 36px;
-        font-weight: 300;
-    }
-
-    p {
-        max-width: 800px;
-        padding-left: 20px;
-        font-size: 20px;
-        line-height: 1.618;
     }
 `;
 

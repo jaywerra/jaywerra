@@ -1,12 +1,12 @@
 import React from "react"
 import Resume from "../components/Resume"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 
 const ResumePage = () => {
   return (
     <>
-      <SEO title="Resume" description="Resume for developer & designer, Jay Werra" />
+      <Seo title="Resume" description="Resume for developer & designer, Jay Werra" />
       <main>
           <Resume />
       </main>

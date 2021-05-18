@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
     ResumeView,
-    ResumeHeader,
     ResumeBody,
     ResumeRow,
     ResumeRowHeader,
