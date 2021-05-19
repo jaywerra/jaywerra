@@ -22,6 +22,11 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
 
+    ::selection {
+        background: #222;
+        color: #fefefe;
+    }
+
     ul {
         margin: 0;
         padding: 0;

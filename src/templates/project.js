@@ -26,16 +26,6 @@ export const query = graphql`
     }
 `;
 
-const projectContainer = {
-    hidden: { opacity: 0, y: 4 },
-    show: {
-        opacity: 1, y: 0,
-        transition: {
-            duration: 0.5
-        }
-    },
-}
-
 const ProjectTemplate = ({ data: { mdx: project }}) => {
     
     return (

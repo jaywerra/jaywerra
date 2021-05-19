@@ -86,6 +86,11 @@ export const LinkList = styled.ul`
 
         a {
             text-decoration: underline;
+            @media(hover: hover) and (pointer: fine) {
+                &:hover {
+                    color: #0000EE;
+                }
+            }
         }
 
         img {

@@ -45,13 +45,11 @@ export const ProjectListViewToggle = styled.div`
     }
 `;
 
-export const Projects = styled(motion.div)`
-    @media(min-width: 900px) {
-        /* padding-top: 98px; */
-    }
+export const Projects = styled.div`
+
 `;
 
-export const ProjectItem = styled(motion(Link))`
+export const ProjectItem = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,19 +71,31 @@ export const ProjectItem = styled(motion(Link))`
 `;
 
 export const ProjectTitle = styled.h2`
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 300;
     letter-spacing: 1px;
+
+    @media(min-width: 900px) {
+        font-size: 28px;
+    }
 `;
 
 export const ProjectWhere = styled.p`
     margin: 8px 0;
-    font-size: 16px;
+    font-size: 14px;
+
+    @media(min-width: 900px) {
+        font-size: 16px;
+    }
 `;
 
 export const ProjectYear = styled.p`
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
+
+    @media(min-width: 900px) {
+        font-size: 16px;
+    }
 `;
 
 export const ProjectDesc = styled.div`
@@ -95,11 +105,4 @@ export const ProjectDesc = styled.div`
 export const ProjectArrow = styled.div`
     font-size: 30px;
     font-weight: 300;
-`;
-
-export const ProjectThumbnail = styled(motion.div)`
-display: none;
-    img {
-        position: absolute;
-    }
 `;

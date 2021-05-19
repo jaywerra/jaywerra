@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import { motion } from "framer-motion"
 
-export const ProjectDetails = styled(motion.div)`
+export const ProjectDetails = styled.div`
     padding: 24px 20px;
 
     @media(min-width: 900px) {

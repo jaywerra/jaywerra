@@ -12,7 +12,6 @@ import {
     ProjectTitle,
     ProjectYear,
     ProjectWhere,
-    ProjectThumbnail
 } from "./ProjectListStyles"
 
 const ProjectList = () => {
@@ -38,9 +37,6 @@ const ProjectList = () => {
                     <ProjectArrow>   
                         &rarr;
                     </ProjectArrow>
-                    <ProjectThumbnail>
-                      <img src="https://ct112013.files.wordpress.com/2013/07/pasteeel.jpg"   />
-                    </ProjectThumbnail>
                   </ProjectItem>
               ))}
            </Projects>

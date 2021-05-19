@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import {motion} from "framer-motion"
 
-export const ResumeView = styled(motion.div)`
+export const ResumeView = styled.div`
     position: absolute;
     right: 0;
     padding-bottom: 32px;
@@ -102,15 +102,10 @@ export const SkillsBlock = styled.ul`
         background: #ddd;
         border-radius: 6px;
         font-size: 14px;
-        /* transition: ease-in-out 0.15s; */
 
         @media(min-width: 900px) {
             padding: 8px 16px;
             font-size: 16px;
-        }
-
-        &:hover {
-            /* transform: scale(1.3); */
         }
     }
 `;
