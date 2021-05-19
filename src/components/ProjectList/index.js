@@ -1,7 +1,6 @@
 import React from 'react'
 import useProjects from "../../hooks/use-projects"
 
-import { motion } from 'framer-motion'
 import {
     ProjectListView,
     // ProjectListViewToggle,

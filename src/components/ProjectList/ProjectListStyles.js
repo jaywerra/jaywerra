@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import {motion} from "framer-motion"
-
 export const ProjectListView = styled.div`
     position: absolute;
     right: 0;

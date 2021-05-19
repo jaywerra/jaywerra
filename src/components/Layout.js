@@ -13,9 +13,9 @@ const Layout = ({children}) => {
 
     const [theme, setTheme] = useState("light");
 
-    const toggleTheme = () => {
-        theme === "light" ? setTheme("dark") : setTheme("light");
-    };
+    // const toggleTheme = () => {
+    //     theme === "light" ? setTheme("dark") : setTheme("light");
+    // };
 
     const data = useStaticQuery(graphql`
         {
@@ -35,11 +35,6 @@ const Layout = ({children}) => {
         <ThemeProvider theme={ theme === "light" ? lightTheme : darkTheme }>
             <GlobalStyles />
             <Typography />
-            <Helmet>
-                <html lang="en" />
-                <title>Title</title>
-                <meta name="description" content="site description"/>
-            </Helmet>
             <div className="borderTop"></div>
             <div className="borderBottom"></div>
             <div className="borderLeft"></div>

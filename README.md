@@ -15,6 +15,6 @@ Todo
 - ~~External link icons~~
 - Custom cursor
 - ~~AnimatePresence routes~~
-- Add noise effecg bg
+- Add noise effect bg
 - ~~Highlight text black~~
 - ~~.env file~~
