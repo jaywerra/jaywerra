@@ -8,6 +8,7 @@ import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
 import { motion } from "framer-motion"
+import { ContentColumn } from "../styles/LayoutStyles"
 
 const Layout = ({children}) => {
 
@@ -39,9 +40,6 @@ const Layout = ({children}) => {
             <div className="borderBottom"></div>
             <div className="borderLeft"></div>
             <div className="borderRight"></div>
-            {/* <ThemeToggleButton onClick={toggleTheme}>
-                    Theme
-            </ThemeToggleButton> */}
             <HeaderElm>
                 <HeaderSection>
                     <h1>
@@ -79,7 +77,9 @@ const Layout = ({children}) => {
                     opacity: 0
                 }}
             >
-                {children}
+                <ContentColumn>
+                    {children}
+                </ContentColumn>
             </motion.div>
         </ThemeProvider>
     )

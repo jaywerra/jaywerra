@@ -1,17 +1,7 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 export const ProjectListView = styled.div`
-    position: absolute;
-    right: 0;
-    width: 100%;
 
-    @media(min-width: 900px) {
-        width: 70%;
-    }
-
-    @media(min-width: 1200px) {
-        width: 80%;
-    }
 `;
 
 export const ProjectListViewToggle = styled.div`

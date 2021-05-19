@@ -29,7 +29,7 @@ export const query = graphql`
 const ProjectTemplate = ({ data: { mdx: project }}) => {
     
     return (
-        <ContentColumn>
+        <>
             <SEO title={project.frontmatter.title} description={project.frontmatter.metaDescription} />
             <Layout>
                 <ProjectDetails>
@@ -40,7 +40,7 @@ const ProjectTemplate = ({ data: { mdx: project }}) => {
                     </ProjectCopy>
                 </ProjectDetails>       
             </Layout>     
-        </ContentColumn>
+        </>
     );
 }
 
