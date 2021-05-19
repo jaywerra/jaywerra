@@ -66,21 +66,19 @@ const Layout = ({children}) => {
                     </SpotifyPlayer>
                 </HeaderSection>
             </HeaderElm>
-            <motion.div
-                initial={{
-                    opacity: 0,
-                }}
-                animate={{
-                    opacity: 1,
-                }}
-                exit={{
-                    opacity: 0
-                }}
-            >
-                <ContentColumn>
+                <ContentColumn
+                                initial={{
+                                    opacity: 0,
+                                }}
+                                animate={{
+                                    opacity: 1,
+                                }}
+                                exit={{
+                                    opacity: 0
+                                }}
+                >
                     {children}
                 </ContentColumn>
-            </motion.div>
         </ThemeProvider>
     )
 }

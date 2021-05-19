@@ -2,11 +2,9 @@ import styled from "styled-components"
 
 export const ProjectDetails = styled.div`
     padding: 24px 20px;
-    background: red;
 
     @media(min-width: 900px) {
         padding: 32px 40px;
-        background: orange;
     }
 
     p {

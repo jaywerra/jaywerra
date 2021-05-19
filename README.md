@@ -18,3 +18,4 @@ Todo
 - Add noise effect bg
 - ~~Highlight text black~~
 - ~~.env file~~
+- Update 404 page
