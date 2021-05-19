@@ -1,15 +1,15 @@
 import React from "react"
 import Resume from "../components/Resume"
 import SEO from "../components/SEO"
-
+import Layout from "../components/Layout"
 
 const ResumePage = () => {
   return (
     <>
       <SEO title="Resume" description="Resume for developer & designer, Jay Werra" />
-      <main>
+      <Layout>
           <Resume />
-      </main>
+      </Layout>
    </>   
   )
 }

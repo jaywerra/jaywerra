@@ -96,3 +96,10 @@ export const ProjectArrow = styled.div`
     font-size: 30px;
     font-weight: 300;
 `;
+
+export const ProjectThumbnail = styled(motion.div)`
+display: none;
+    img {
+        position: absolute;
+    }
+`;

@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
+import { motion } from "framer-motion"
 
 const Layout = ({children}) => {
 
@@ -72,7 +73,28 @@ const Layout = ({children}) => {
                     </SpotifyPlayer>
                 </HeaderSection>
             </HeaderElm>
-            {children}
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    y: 20
+                }}
+                animate={{
+                    opacity: 1,
+                    y: 0
+                }}
+                exit={{
+                    opacity: 0,
+                    y: 20
+                }}
+                transition={{
+                    type: "spring",
+                    mass: 0.35,
+                    stiffness: 75,
+                    duration: 0.3
+                  }}
+            >
+                {children}
+            </motion.div>
         </ThemeProvider>
     )
 }

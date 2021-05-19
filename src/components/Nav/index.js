@@ -1,58 +1,61 @@
-import React, {useEffect} from "react"
+import React from "react"
 import { Link } from 'gatsby'
 import Obfuscate from "react-obfuscate"
 import { LinkList } from "../Header/HeaderStyles"
-import ExternalLink from "../../images/icons/icon-externallink.svg"
 
 const Nav = () => {
-    const activeStyles = {
-        color: "#2700CA"
-    }
+
+    const Links = [
+        {
+            label: "Projects",
+            linkUrl : "/"
+        },
+        {
+            label: "Resume",
+            linkUrl : "/resume/"
+        },
+        {
+            label: "Email",
+            linkUrl : "jay@jaywerra.com"
+        },
+        {
+            label : "Werra",
+            linkUrl : "https://werra.io"
+        },
+        {
+            label: "GitHub",
+            linkUrl : "https://github.com/werradesign"
+        },
+        {
+            label: "Instagram",
+            linkUrl : "https://www.instagram.com/jaywerra/"
+        },
+        {
+            label: "Linkedin",
+            linkUrl : "https://www.linkedin.com/in/jaywerra/"
+        }
+    ]
 
     return (
         <LinkList>
-            <li>
-                <Link
-                    to="/"
-                    activeStyle={activeStyles}
-                >
-                    Projects
-                </Link>
-
-            </li>
-            <li>
-                <Link
-                    to="/resume/"
-                    activeStyle={activeStyles}
-                >
-                    Resume
-                </Link>
-            </li>
-            <li>
-                <Obfuscate email="jay@jaywerra.com" aria-label="Email Me">
-                    Email
-                </Obfuscate>
-            </li>
-                <li>
-                    <a href="https://werra.io" target="_blank" rel="noopener noreferrer">
-                        Werra
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/werradesign" target="_blank" rel="noopener noreferrer">
-                        GitHub
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/jaywerra/" target="_blank" rel="noopener noreferrer">
-                        Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/jaywerra/" target="_blank" rel="noopener noreferrer">
-                        Linkedin
-                    </a>
-                </li>
+            {Links.map(navLink => {
+                if (navLink.linkUrl.startsWith('http')) {
+                    return <li key={navLink.label}>
+                        <a href={navLink.linkUrl} target="_blank" rel="noopener noreferrer">
+                            {navLink.label}
+                        </a>
+                    </li>
+                }
+                else if (navLink.linkUrl.startsWith('jay@')) {
+                    return <li key={navLink.label}>
+                        <Obfuscate email={navLink.linkUrl} aria-label="Email Me">
+                            {navLink.label}
+                        </Obfuscate>
+                    </li>
+                } else {
+                    return <li key={navLink.label}><Link to={navLink.linkUrl}>{navLink.label}</Link></li>
+                }
+            })}
         </LinkList>
     )
 }

@@ -62,9 +62,9 @@ const Resume = () => {
 
     return (
         <ResumeView
-            variants={resumeContainer}
-            initial="hidden"
-            animate="show"
+            // variants={resumeContainer}
+            // initial="hidden"
+            // animate="show"
         >
             <ResumeBody>
                 <ResumeRowHeader>

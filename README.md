@@ -12,5 +12,6 @@ Todo
 - Grid or list toggle function
 - Image hosting on cloudinary or aws
 - Project pagination 
-- External link icons
+- ~~External link icons~~
 - Custom cursor
+- ~~AnimatePresence routes~~

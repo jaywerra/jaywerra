@@ -2,6 +2,7 @@ import * as React from "react"
 import {graphql, useStaticQuery} from 'gatsby'
 import SEO from '../components/SEO'
 import ProjectList from "../components/ProjectList"
+import Layout from "../components/Layout"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -18,7 +19,9 @@ const IndexPage = () => {
   return (
     <main>
       <SEO title="Developer + Designer" description={data.site.siteMetadata.description} />
-      <ProjectList />
+      <Layout>
+        <ProjectList />
+      </Layout>
     </main>
   )
 }
