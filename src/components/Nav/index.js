@@ -36,25 +36,21 @@ const Nav = () => {
                 <li>
                     <a href="https://werra.io" target="_blank" rel="noopener noreferrer">
                         Werra
-                        <img src={ExternalLink} alt="" />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/werradesign" target="_blank" rel="noopener noreferrer">
                         GitHub
-                        <img src={ExternalLink} alt="" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/jaywerra/" target="_blank" rel="noopener noreferrer">
                         Instagram
-                        <img src={ExternalLink} alt="" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/jaywerra/" target="_blank" rel="noopener noreferrer">
                         Linkedin
-                        <img src={ExternalLink} alt="" />
                     </a>
                 </li>
         </LinkList>
