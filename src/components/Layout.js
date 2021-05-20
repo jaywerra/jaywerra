@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-import { ContentColumn, Noise } from "../styles/LayoutStyles"
+import { ContentColumn } from "../styles/LayoutStyles"
 
 const Layout = ({children}) => {
 
@@ -77,7 +77,6 @@ const Layout = ({children}) => {
                 >
                     {children}
                 </ContentColumn>
-            <Noise></Noise>
         </ThemeProvider>
     )
 }
