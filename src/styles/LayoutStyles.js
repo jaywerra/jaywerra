@@ -34,7 +34,7 @@ export const Noise = styled.div`
     position: absolute;
     height: 100vh;
     width: 100vw;
-    opacity: 0.25;
+    opacity: 0.20;
     z-index: -1;
 
     &:after {

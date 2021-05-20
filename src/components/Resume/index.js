@@ -157,6 +157,9 @@ const Resume = () => {
                                     Clients include: FedEx, FedEx Office, MiniLux, Citizens Bank, American Home Shield, Rockport Shoes
                                 </li>
                             </ul>
+                            <p class="note">
+                                <strong>* Still freelance with them for React projects</strong>
+                            </p>
                         </JobDescription>
                     </Job>
                 </ResumeRow>

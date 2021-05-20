@@ -65,6 +65,10 @@ export const JobDescription = styled.div`
             margin-bottom: 8px;
         }
     }
+
+    .note {
+        margin: 24px 13px 0;
+    }
 `;
 
 export const School = styled.div`
