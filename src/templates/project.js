@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import {ContentColumn} from "../styles/LayoutStyles"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { ProjectDetails, ProjectCopy } from '../components/ProjectDetails/ProjectDetailsStyles'
 import SEO from '../components/SEO'

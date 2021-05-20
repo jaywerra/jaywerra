@@ -43,7 +43,8 @@ const Resume = () => {
         "Framer",
         "Adobe Creative Suite",
         "Figma",
-        "Jira"
+        "Jira",
+        "Trello"
     ];
 
     return (

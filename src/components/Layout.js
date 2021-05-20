@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Helmet } from "react-helmet"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { HeaderElm, HeaderSection, HeaderIntro, SpotifyPlayer } from "./Header/HeaderStyles"
 import Nav from "../components/Nav"
@@ -7,8 +6,7 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "../styles/Themes"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-import { motion } from "framer-motion"
-import { ContentColumn } from "../styles/LayoutStyles"
+import { ContentColumn, Noise } from "../styles/LayoutStyles"
 
 const Layout = ({children}) => {
 
@@ -79,6 +77,7 @@ const Layout = ({children}) => {
                 >
                     {children}
                 </ContentColumn>
+            <Noise></Noise>
         </ThemeProvider>
     )
 }
