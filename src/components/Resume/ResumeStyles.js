@@ -49,6 +49,13 @@ export const JobName = styled.a`
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.031em;
+    transition: linear 0.35s;
+
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            color: #003bff;
+        }
+    }
 `;
 
 export const JobDescription = styled.div`

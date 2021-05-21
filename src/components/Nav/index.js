@@ -53,7 +53,10 @@ const Nav = () => {
                         </Obfuscate>
                     </li>
                 } else {
-                    return <li key={navLink.label}><Link to={navLink.linkUrl}>{navLink.label}</Link></li>
+                    return <li key={navLink.label}>
+                        <Link to={navLink.linkUrl} activeStyle={{color: "#003bff"}}>
+                            {navLink.label}
+                        </Link></li>
                 }
             })}
         </LinkList>

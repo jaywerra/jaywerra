@@ -11,11 +11,11 @@ Todo
 - CV PDF file download
 - Grid or list toggle function
 - Image hosting on cloudinary or aws
-- Project pagination 
+- ~~Project pagination~~
 - ~~External link icons~~
 - Custom cursor
 - ~~AnimatePresence routes~~
 - ~~Add noise effect bg~~
 - ~~Highlight text black~~
 - ~~.env file~~
-- Update 404 page
+- Update 404 page with countdown cloc/ redirect

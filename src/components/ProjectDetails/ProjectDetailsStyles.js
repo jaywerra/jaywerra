@@ -86,3 +86,17 @@ export const ImageContainer = styled.div`
     margin: 24px 0;
     max-width: 1400px;
 `;
+
+export const ProjectNavigation = styled.div`
+    padding: 32px 0 16px;
+    border-top: 2px solid #000;
+
+    a {
+
+        h4 {
+            font-size: 26px;
+            font-weight: 300;
+            transition: linear 0.35s;
+        }
+    }
+`;
