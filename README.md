@@ -19,3 +19,5 @@ Todo
 - ~~Highlight text black~~
 - ~~.env file~~
 - Update 404 page with countdown cloc/ redirect
+- Stick header on mobile
+- Clean up code

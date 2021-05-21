@@ -88,15 +88,17 @@ export const ImageContainer = styled.div`
 `;
 
 export const ProjectNavigation = styled.div`
-    padding: 32px 0 16px;
+    padding: 20px 0;
     border-top: 2px solid #000;
+    text-align: center;
+
+    @media(min-width: 900px) {
+        padding: 32px 20px;
+        text-align: left;
+    }
 
     a {
-
-        h4 {
-            font-size: 26px;
-            font-weight: 300;
-            transition: linear 0.35s;
-        }
+        font-size: 26px;
+        font-weight: 300;
     }
 `;
