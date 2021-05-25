@@ -47,12 +47,12 @@ const ProjectTemplate = ({ pageContext, data: { mdx: project }}) => {
                     </ProjectCopy>
                 </ProjectDetails>     
                 <ProjectNavigation>
-                        {next && (
-                            <Link to={next.url}>
-                                Next Project // {next.title}
-                            </Link>
-                        )}
-                    </ProjectNavigation>
+                    {next && (
+                        <Link to={next.url}>
+                            Next Project // {next.title}
+                        </Link>
+                    )}
+                </ProjectNavigation>
             </Layout>     
         </>
     );

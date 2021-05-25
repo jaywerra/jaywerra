@@ -18,7 +18,7 @@ Todo
 - ~~Add noise effect bg~~
 - ~~Highlight text black~~
 - ~~.env file~~
-- Update 404 page with countdown cloc/ redirect
+- Update 404 page with countdown clock -> redirect
 - Stick header on mobile
 - Clean up code
 - Photo nostalgia page or something

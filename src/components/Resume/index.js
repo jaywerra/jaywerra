@@ -24,6 +24,7 @@ const Resume = () => {
         "Jekyll",
         "CSS",
         "Styled Components",
+        "GraphQL",
         "WordPress",
         "Shopify",
         "Headless CMS",
