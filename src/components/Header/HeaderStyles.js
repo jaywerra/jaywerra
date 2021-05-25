@@ -9,7 +9,7 @@ export const HeaderElm = styled.header`
         top: 0;
         width: 30%;
         border-right-style: solid;
-        border-right-width: 2px;
+        border-right-width: 3px;
     }
 
     @media(min-width: 1200px) {
@@ -42,7 +42,7 @@ export const HeaderIntro = styled.p`
 
 export const HeaderSection = styled.div`
     padding: 24px 20px;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     border-bottom-style: solid;
 
     &.desktoponly {

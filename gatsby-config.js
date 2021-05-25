@@ -33,7 +33,10 @@ module.exports = {
             options: {
               linkImagesToOriginal: false,
               quality: 100,
-              withWebp: true
+              withWebp: true,
+              styleAttributes: false,
+              maxWidth: 1024,
+              wrapperStyle: 'margin: 0'
             }
           }
         ]

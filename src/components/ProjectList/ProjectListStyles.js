@@ -10,7 +10,7 @@ export const ProjectListViewToggle = styled.div`
     justify-content: space-between;
     padding: 24px 20px;
     border-bottom-style: solid;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
 
     @media(min-width: 900px) {
         padding: 24px 40px;
@@ -44,7 +44,7 @@ export const ProjectItem = styled(Link)`
     padding: 24px 20px;
     cursor: pointer;
     border-bottom-style: solid;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     transition: background linear 0.3s;
 
     @media(min-width: 900px) {

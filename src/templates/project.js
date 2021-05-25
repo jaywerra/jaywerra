@@ -45,8 +45,6 @@ const ProjectTemplate = ({ pageContext, data: { mdx: project }}) => {
                             {project.body}
                         </MDXRenderer>
                     </ProjectCopy>
-
-
                 </ProjectDetails>     
                 <ProjectNavigation>
                         {next && (

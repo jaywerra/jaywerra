@@ -43,6 +43,13 @@ export const ProjectDetails = styled.div`
         font-weight: 300;
     }
 
+    .project__image {
+        padding: 32px 0;
+        @media(min-width: 900px) {
+            padding: 72px 0 0;
+        }
+    }
+
     .intro {
         p {
             margin: 0 0 6px;

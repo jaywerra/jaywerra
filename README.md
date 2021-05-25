@@ -21,3 +21,5 @@ Todo
 - Update 404 page with countdown cloc/ redirect
 - Stick header on mobile
 - Clean up code
+- Photo nostalgia page or something
+- Scrolling/Ticker style name/logo on hover
