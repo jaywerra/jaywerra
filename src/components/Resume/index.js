@@ -79,7 +79,7 @@ const Resume = () => {
                         </JobTitle>
                         <JobDescription>
                             <p>
-                                Joined Digitas as an engineer in 2014. Lead developer on several Bank of America and Merrill Lynch websites. Daily tasks/technolgies included:
+                                Joined Digitas as an engineer in 2014. Lead developer on several Bank of America and Merrill Lynch websites. Daily tasks/technologies included:
                             </p>
                             <ul>
                                 <li>
