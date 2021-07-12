@@ -52,7 +52,7 @@ const Layout = ({children}) => {
                 </HeaderSection>
                 <HeaderSection className="desktoponly">
                     <HeaderIntro>
-                        Accepting new projects this Summer.
+                        Accepting new projects Fall 2021
                     </HeaderIntro>
                 </HeaderSection>
                 <HeaderSection className="desktoponly">
